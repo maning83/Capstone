@@ -1,0 +1,228 @@
+body {font-family: sans-serif;
+  font-size: 16px;
+  color: gray;}
+
+h2 {font-size: 2em;
+  font-weight: bold;}
+
+h3 {font-size: 1.5em;}
+
+header {
+  position: fixed;
+  z-index: 2;
+  background: white;
+  width: 100%;
+}
+
+.headercontent {height: 64px;
+  margin: 0 24px;
+  padding: 0;
+  display: flex;
+  align-items: center;}
+
+.Mobileheader {display: none;}
+
+.headercontent .lastspan {flex: 1;
+color: lightgray;}
+
+.headercontent span {line-height: 32px;}
+
+.headercontent li {display: inline-block;
+margin-left: 16px;
+  }
+
+@media only screen and (max-width: 480px) {
+  .headercontent {display: none;}
+  .Mobileheader {display: flex;}
+  .Mobileheader ul {
+    height: 64px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;}
+
+}
+
+
+.Banner { position: relative;
+  top: 64px;
+  display: flex;
+  align-items: center;
+  background-color: lightgray;
+}
+
+
+.Banner .Container { width: 55%;
+  height: auto;
+  margin: 32px 24px;
+}
+
+img {max-width: 100%;
+  height: auto;
+
+ }
+
+.Bannertext {max-width: 25%;
+}
+
+.Bannertext h2, p {margin-bottom: 1em;}
+
+.Bannertext .btn {width: 100%;
+  background-color: gray;
+  color: lightgray;
+  text-align: center;
+  padding: 8px 0;}
+
+  @media only screen and (max-width: 480px) {
+    .Banner {flex-direction: column;}
+    .Banner .Container {width: 100%;
+    margin: 0;}
+    .Bannertext {max-width: 100%;
+    padding: 0 16px;}
+    .Bannertext h2 {margin: 32px 0;}
+    .Bannertext .btn {margin: 24px 0;}
+  }
+
+
+
+.Guide {background-color: white;
+  display: flex;
+  position: relative;
+  top: 64px;}
+
+.Info {width: 55%;
+  height: auto;
+margin: 32px 24px;}
+
+
+.Info .Container {width: 100%;
+  height: auto;
+  margin-bottom: 32px;
+  }
+
+.Info h2, p {margin-bottom: 24px;
+  }
+
+.Column {width: 40%;
+  display: flex;
+  flex-direction: column;
+  /*justify-content: space-between;*/
+  margin: 16px 0;}
+
+.Info2 {display: flex;
+  align-items: center;}
+
+.Info2 .Container {width: 35%;
+  height: auto;
+  margin: 16px;}
+.mobileimg {display: none;}
+
+.Info2 .Text {width: 65%;}
+
+.Info2 h3, p {margin-bottom: 8px;}
+
+@media only screen and (max-width: 480px) {
+  .Guide .Info {display: none;}
+  .Guide .Column {width: 100%;}
+  .Info2 {flex-direction: column;
+  margin: 0 16px 32px 16px;}
+  .Info2 .Container {width: 100%;}
+  .pcimg {display: none;}
+  .mobileimg {display: flex;}
+  .Info2 .Text {width: 100%;
+  margin-left: 32px;}
+}
+
+.Content {background-color: lightgray;
+  position: relative;
+  top: 64px;}
+
+.Content h2 {
+  padding-top: 32px;
+  padding-bottom: 16px;
+  text-align: center;}
+
+.Courses {display: flex;
+  justify-content: space-between;
+  margin: 0 56px;}
+
+.courselist {display: none;}
+
+.Class {width: 30%;
+  margin: 16px;
+  background-color: white;
+}
+
+.lastrow {padding-bottom: 16px;}
+
+@media only screen and (max-width: 480px) {
+  .Content {background-color: white;
+  border-top: 1px solid gray;
+  margin-bottom: 24px;
+}
+  .Courses {display: none;}
+  .courselist {display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;}
+  .courselist .class {background-color: lightgray;
+  width: 90%;
+  padding: 16px;
+  margin-bottom: 8px;
+  }
+  .courselist h3 {}
+}
+
+.Thesis {background-color: white;
+  position: relative;
+  top: 64px;}
+
+.Thesis h2 {padding: 32px 0;
+  text-align: center;}
+
+.Thesiscontent {display: flex;}
+
+.video {width: 55%;
+margin: 0 24px;}
+
+.video .Container {
+  margin-bottom: 24px;
+  }
+.video h3 {margin-bottom: 8px;}
+
+.video p {margin-bottom: 32px;}
+
+video {width: 100%;
+  height: auto;}
+
+.Thesiscontent .Column {margin: 0;}
+
+@media only screen and (max-width: 480px) {
+  .Thesis {border-top: 1px solid gray;}
+  .Thesiscontent .Column {display: none;}
+  .video  {width: 100%;
+  margin: 0;}
+  .video h3, p {display: none;}
+}
+
+
+footer {position: relative;
+  top: 64px;
+  padding-top: 16px;
+  padding-left: 24px;
+  display: flex;
+  height: 64px;
+  border-top: 1px solid lightgray;
+}
+
+footer span {padding: 0 8px;}
+
+
+.copyright {flex: 1;}
+
+@media only screen and (max-width: 480px) {
+  footer  {border: 0;
+  height: auto;
+  padding: 16px 24px;}
+  footer .nodis {display: none;}
+}
