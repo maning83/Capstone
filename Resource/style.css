@@ -31,7 +31,7 @@ color: lightgray;}
 margin-left: 16px;
   }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   .headercontent {display: none;}
   .Mobileheader {display: flex;}
   .Mobileheader ul {
@@ -73,7 +73,7 @@ img {max-width: 100%;
   text-align: center;
   padding: 8px 0;}
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 800px) {
     .Banner {flex-direction: column;}
     .Banner .Container {width: 100%;
     margin: 0;}
@@ -121,7 +121,7 @@ margin: 32px 24px;}
 
 .Info2 h3, p {margin-bottom: 8px;}
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   .Guide .Info {display: none;}
   .Guide .Column {width: 100%;}
   .Info2 {flex-direction: column;
@@ -155,7 +155,7 @@ margin: 32px 24px;}
 
 .lastrow {padding-bottom: 16px;}
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   .Content {background-color: white;
   border-top: 1px solid gray;
   margin-bottom: 24px;
@@ -197,7 +197,7 @@ video {width: 100%;
 
 .Thesiscontent .Column {margin: 0;}
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   .Thesis {border-top: 1px solid gray;}
   .Thesiscontent .Column {display: none;}
   .video  {width: 100%;
@@ -220,7 +220,7 @@ footer span {padding: 0 8px;}
 
 .copyright {flex: 1;}
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   footer  {border: 0;
   height: auto;
   padding: 16px 24px;}
