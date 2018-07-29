@@ -1,6 +1,18 @@
-body {font-family: sans-serif;
+/* latin */
+@font-face {
+  font-family: 'Crete Round';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Crete Round'), local('CreteRound-Regular'), url(https://fonts.gstatic.com/s/creteround/v6/55xoey1sJNPjPiv1ZZZrxK170b0.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
+body {font-family: "Crete Round", serif;
   font-size: 16px;
-  color: gray;}
+  color: rgb(50, 50, 50);
+  max-width: 1200px;
+  margin: 0 auto;}
 
 h2 {font-size: 2em;
   font-weight: bold;}
@@ -12,26 +24,32 @@ header {
   z-index: 2;
   background: white;
   width: 100%;
+  max-width: 1200px;
 }
 
 .headercontent {height: 64px;
   margin: 0 24px;
   padding: 0;
   display: flex;
-  align-items: center;}
+  align-items: center;
+  justify-content: space-between;}
 
 .Mobileheader {display: none;}
 
-.headercontent .lastspan {flex: 1;
-color: lightgray;}
+.headercontent .lastspan {
+color: rgb(170, 170, 170);}
 
-.headercontent span {line-height: 32px;}
+.logoname {display: flex;
+  align-items: center;}
+
+.logoname span {line-height: 32px;
+}
 
 .headercontent li {display: inline-block;
 margin-left: 16px;
   }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 700px) {
   .headercontent {display: none;}
   .Mobileheader {display: flex;}
   .Mobileheader ul {
@@ -48,7 +66,7 @@ margin-left: 16px;
   top: 64px;
   display: flex;
   align-items: center;
-  background-color: lightgray;
+  background-color: rgb(220, 220, 220);
 }
 
 
@@ -62,18 +80,21 @@ img {max-width: 100%;
 
  }
 
-.Bannertext {max-width: 25%;
+.Bannertext {max-width: 35%;
+  margin-left: 16px;
 }
 
-.Bannertext h2, p {margin-bottom: 1em;}
+.Bannertext h2, .Bannertext p {margin-bottom: 1em;}
 
 .Bannertext .btn {width: 100%;
-  background-color: gray;
-  color: lightgray;
+  background-color: rgb(170, 170, 170);
+  color: rgb(220, 220, 220);
   text-align: center;
   padding: 8px 0;}
 
-  @media only screen and (max-width: 800px) {
+.Bannertext .btn:hover {background-color: rgb(120, 120, 120)}
+
+  @media only screen and (max-width: 700px) {
     .Banner {flex-direction: column;}
     .Banner .Container {width: 100%;
     margin: 0;}
@@ -100,7 +121,7 @@ margin: 32px 24px;}
   margin-bottom: 32px;
   }
 
-.Info h2, p {margin-bottom: 24px;
+.Info h2, .Info p {margin-bottom: 24px;
   }
 
 .Column {width: 40%;
@@ -119,9 +140,18 @@ margin: 32px 24px;}
 
 .Info2 .Text {width: 65%;}
 
-.Info2 h3, p {margin-bottom: 8px;}
+.Info:hover {background-color: rgb(170, 170, 170);
+color: white;}
+.Info2:hover {background-color: rgb(170, 170, 170);
+color: white;}
 
-@media only screen and (max-width: 800px) {
+.Info2 h3, .Info2 p {margin-bottom: 8px;}
+
+.Text a {color: rgb(42, 70, 255);}
+
+.Text a:visited {color: rgb(100, 121, 255);}
+
+@media only screen and (max-width: 700px) {
   .Guide .Info {display: none;}
   .Guide .Column {width: 100%;}
   .Info2 {flex-direction: column;
@@ -133,7 +163,7 @@ margin: 32px 24px;}
   margin-left: 32px;}
 }
 
-.Content {background-color: lightgray;
+.Content {background-color: rgb(220, 220, 220);
   position: relative;
   top: 64px;}
 
@@ -153,11 +183,18 @@ margin: 32px 24px;}
   background-color: white;
 }
 
+.Class:hover {background-color: rgb(170, 170, 170);
+color: white;}
+
 .lastrow {padding-bottom: 16px;}
 
-@media only screen and (max-width: 800px) {
+.Class h3, .Class p {margin-bottom: 8px;
+  margin-left: 16px;}
+.Class img {margin-bottom: 16px;}
+
+@media only screen and (max-width: 700px) {
   .Content {background-color: white;
-  border-top: 1px solid gray;
+  border-top: 1px solid rgb(170, 170, 170);
   margin-bottom: 24px;
 }
   .Courses {display: none;}
@@ -165,12 +202,13 @@ margin: 32px 24px;}
   flex-direction: column;
   align-items: center;
   width: auto;}
-  .courselist .class {background-color: lightgray;
+  .courselist .class {background-color: rgb(220, 220, 220);
   width: 90%;
   padding: 16px;
   margin-bottom: 8px;
   }
-  .courselist h3 {}
+  .courselist .class:hover {background-color: rgb(170, 170, 170);
+  color: white;}
 }
 
 .Thesis {background-color: white;
@@ -197,12 +235,12 @@ video {width: 100%;
 
 .Thesiscontent .Column {margin: 0;}
 
-@media only screen and (max-width: 800px) {
-  .Thesis {border-top: 1px solid gray;}
+@media only screen and (max-width: 700px) {
+  .Thesis {border-top: 1px solid rgb(170, 170, 170);}
   .Thesiscontent .Column {display: none;}
   .video  {width: 100%;
   margin: 0;}
-  .video h3, p {display: none;}
+  .video h3, .video p {display: none;}
 }
 
 
@@ -212,7 +250,7 @@ footer {position: relative;
   padding-left: 24px;
   display: flex;
   height: 64px;
-  border-top: 1px solid lightgray;
+  border-top: 1px solid rgb(220, 220, 220);
 }
 
 footer span {padding: 0 8px;}
@@ -220,7 +258,7 @@ footer span {padding: 0 8px;}
 
 .copyright {flex: 1;}
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 700px) {
   footer  {border: 0;
   height: auto;
   padding: 16px 24px;}
