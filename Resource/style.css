@@ -90,7 +90,8 @@ img {max-width: 100%;
   background-color: rgb(170, 170, 170);
   color: rgb(220, 220, 220);
   text-align: center;
-  padding: 8px 0;}
+  padding: 8px 0;
+  transition: all 0.2s ease-out;}
 
 .Bannertext .btn:hover {background-color: rgb(120, 120, 120)}
 
@@ -131,7 +132,8 @@ margin: 32px 24px;}
   margin: 16px 0;}
 
 .Info2 {display: flex;
-  align-items: center;}
+  align-items: center;
+transition: all 0.2s ease-out;}
 
 .Info2 .Container {width: 35%;
   height: auto;
@@ -180,6 +182,7 @@ color: white;}
 .Class {width: 30%;
   margin: 16px;
   background-color: white;
+  transition: all 0.2s ease-out;
 }
 
 .Class:hover {background-color: rgb(170, 170, 170);
@@ -205,6 +208,7 @@ color: white;}
   width: 90%;
   padding: 16px;
   margin-bottom: 8px;
+  transition: all 0.3s ease-out;
   }
   .courselist .class:hover {background-color: rgb(170, 170, 170);
   color: white;}
